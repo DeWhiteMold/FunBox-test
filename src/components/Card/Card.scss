@@ -1,0 +1,119 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 80px 67px 0;
+  width: 320px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  &__box {
+    position: relative;
+    background-image: url(../../images/Photo.png);
+    background-size: 368px;
+    background-repeat: no-repeat;
+    background-position: top 208px left -24px;
+    height: 480px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: solid 4px #1698d9;
+    border-radius: 12px;
+  }
+
+  &__title {
+    margin: 21px 0 0 51px;
+    font-family: 'Trebuchet MS';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666;
+  }
+
+  &__name {
+    margin: 5px 0 0 48px;
+    font-family: 'Trebuchet MS';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  &__taste {
+    margin: (-1px) 0 0 48px;
+    font-family: 'Trebuchet MS';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  &__caption-box {
+    width: 135px;
+    padding: 0;
+    margin: 15px 0 0 51px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666;
+  }
+
+  &__caption {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__weight {
+    background-color: #1698d9;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    bottom: 16px;
+    right: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &-amount {
+      margin-top: 20px;
+      font-family: 'Trebuchet MS';
+      font-weight: 400;
+      font-size: 42px;
+      line-height: 22px;
+      color: #fff;
+    }
+
+    &-currency {
+      margin-top: 10px;
+      font-family: 'Trebuchet MS';
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 22px;
+      color: #fff;
+    }
+  }
+
+  &__subscription {
+    align-self: center;
+    margin-top: 14px;
+    font-family: 'Trebuchet MS';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #fff;
+  }
+
+  &__buy-link {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #1698d9;
+    text-decoration: underline dashed;
+  }
+}

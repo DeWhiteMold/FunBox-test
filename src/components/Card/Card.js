@@ -1,3 +1,5 @@
+import './Card.scss';
+
 function Card(props) {
   return (
     <div className="card">
