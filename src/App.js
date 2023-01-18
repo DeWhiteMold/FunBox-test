@@ -15,7 +15,6 @@ function App() {
     else {
     setActiveCard([...activeCards, card.id]);
     }
-    console.log(activeCards);
   }
 
   return (

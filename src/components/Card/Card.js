@@ -13,7 +13,7 @@ function Card(props) {
   }
   let isActive = props.cardState.includes(props.cardData.id);
 
-  const notActiveSubscription = (<>`Чего сидишь? Порадуй котэ, <button className="card__buy-link"  onClick={handleThisCardClick}>купи</button>`</>)
+  const notActiveSubscription = (<>Чего сидишь? Порадуй котэ, <button className="card__buy-link"  onClick={handleThisCardClick}>купи</button></>)
 
   return (
     <div className={`card ${isActive ? 'card_active' : ''} ${props.isDisabled ? 'card_disabled' : ''}`}>
@@ -30,8 +30,9 @@ function Card(props) {
           <span className="card__weight-currency">кг</span>
         </div>
       </div>
-      <div className="card__subscription" children={
-        props.isDisabled ? props.cardData.subscriptionIfDisabled : (isActive ? props.cardData.subscriptionIfSelected : notActiveSubscription)} />
+      <div className="card__subscription">
+      {props.isDisabled ? props.cardData.subscriptionIfDisabled : (isActive ? props.cardData.subscriptionIfSelected : notActiveSubscription)} 
+      </div>
     </div>
   )
 }

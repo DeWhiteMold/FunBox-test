@@ -36,6 +36,10 @@
       &__box {
         border-color: #B3B3B3;
 
+        &:hover {
+          cursor: default;
+        }
+
         &::after {
           content: '';
           display: block;
@@ -81,6 +85,10 @@
     border: solid 4px #1698d9;
     border-radius: 12px;
     transition: 1s ease;
+
+    &:hover {
+      cursor: pointer;
+    }
 
     &_active {
       border-color: #D91667;
