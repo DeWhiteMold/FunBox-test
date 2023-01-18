@@ -16,7 +16,7 @@
     transform: rotate(45deg);
     top: -65px;
     left: -79px;
-    background-color: #000;
+    background-color: transparent;
     box-sizing: border-box;
     border: solid 4px #1698d9;
     transition: 1s ease;
@@ -68,6 +68,7 @@
 
   &__box {
     position: relative;
+    clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0 100%, 0 14%);
     background-image: url(../../images/Photo.png);
     background-size: 368px;
     background-repeat: no-repeat;
